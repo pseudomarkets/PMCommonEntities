@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>PMCommonEntities</PackageId>
+    <Version>1.0.0.0</Version>
+    <Authors>Shravan Jambukesan</Authors>
+    <Company>Pseudo Markets</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Database models for Pseudo Markets services</Description>
+    <Copyright>(c) 2020 Pseudo Markets</Copyright>
+    <PackageProjectUrl>https://github.com/pseudomarkets/PMCommonEntities</PackageProjectUrl>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageReleaseNotes>* Initial release</PackageReleaseNotes>
+    <PackageTags>twelvedata, stock data, twelve data, stock quotes</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\PMUnifiedAPI\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
