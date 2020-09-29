@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>PMCommonEntities</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.4</Version>
     <Authors>Shravan Jambukesan</Authors>
     <Company>Pseudo Markets</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -12,8 +12,8 @@
     <PackageProjectUrl>https://github.com/pseudomarkets/PMCommonEntities</PackageProjectUrl>
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <PackageReleaseNotes>* Updated entities for Pseudo Funds component</PackageReleaseNotes>
-    <PackageTags>twelvedata, stock data, twelve data, stock quotes</PackageTags>
+    <PackageReleaseNotes>* Updated entities for Pseudo Xchange</PackageReleaseNotes>
+    <PackageTags>pseudo markets</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +21,10 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MessagePack" Version="2.2.60" />
   </ItemGroup>
 
 </Project>
