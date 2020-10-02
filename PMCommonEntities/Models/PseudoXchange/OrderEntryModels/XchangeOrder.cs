@@ -59,5 +59,7 @@ namespace PMCommonEntities.Models.PseudoXchange.OrderEntryModels
         public OrderPricing OrderPricing { get; set; }
         [Key(8)]
         public OrderStatus OrderStatus { get; set; }
+        [Key(9)]
+        public int AccountId { get; set; }
     }
 }
