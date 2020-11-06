@@ -12,5 +12,6 @@ namespace PMCommonEntities.Models
         public string Symbol { get; set; }
         public string OrderType { get; set; }
         public int Quantity { get; set; }
+        public bool IsOpenOrder { get; set; }
     }
 }
