@@ -7,6 +7,7 @@ namespace PMCommonEntities.Models.PseudoXchange.OrderEntryModels
     public class XchangeQuote
     {
         public string Symbol { get; set; }
+        public string Description { get; set; }
         public double Price { get; set; }
         public DateTime Timestamp { get; set; }
     }

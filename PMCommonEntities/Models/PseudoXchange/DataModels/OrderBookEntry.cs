@@ -5,18 +5,13 @@ using MessagePack;
 
 namespace PMCommonEntities.Models.PseudoXchange.DataModels
 {
-    [MessagePackObject]
     public class OrderBookEntry
     {
-        [Key(0)]
+        // Store directly in applicable bins (these values get updated often so we'd be serializing/deserializing too much)
         public string Symbol { get; set; }
-        [Key(1)]
         public double LastSoldPrice { get; set; }
-        [Key(2)]
-        public DateTime Timestamp { get; set; }
-        [Key(3)]
-        public int BuyVolume { get; set; }
-        [Key(4)]
-        public int SellVolume { get; set; }
+        public DateTime LastTradeTime { get; set; }
+        public long BuyVolume { get; set; }
+        public long SellVolume { get; set; }
     }
 }
