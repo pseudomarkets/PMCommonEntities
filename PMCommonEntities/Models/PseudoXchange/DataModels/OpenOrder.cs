@@ -10,26 +10,24 @@ namespace PMCommonEntities.Models.PseudoXchange.DataModels
     public class OpenOrder
     {
         [Key(0)]
-        public string Symbol { get; set; }
-        [Key(1)]
         public int Quantity { get; set; }
-        [Key(2)]
+        [Key(1)]
         public Enums.OrderTypes OrderType { get; set; }
-        [Key(3)]
+        [Key(2)]
         public Enums.OrderRules OrderRules { get; set; }
-        [Key(4)]
+        [Key(3)]
         public double LowerLimitPrice { get; set; }
-        [Key(5)]
+        [Key(3)]
         public double UpperLimitPrice { get; set; }
-        [Key(6)]
+        [Key(4)]
         public Enums.OrderFillSettings OrderFillSettings { get; set; }
-        [Key(7)]
+        [Key(5)]
         public Enums.OrderPricing OrderPricing { get; set; }
-        [Key(8)]
+        [Key(6)]
         public DateTime Timestamp { get; set; }
-        [Key(9)]
+        [Key(7)]
         public Enums.OrderStatus OrderStatus { get; set; }
-        [Key(10)]
+        [Key(8)]
         public string TransactionId { get; set; }
     }
 }
