@@ -6,7 +6,6 @@ namespace PMCommonEntities.Models.PseudoXchange.OrderEntryModels
 {
     public class OrderEntry
     {
-        public string Token { get; set; }
         public string Symbol { get; set; }
         public int Quantity { get; set; }
         public Enums.OrderTypes OrderType { get; set; }

@@ -4,49 +4,71 @@ using System.Text;
 
 namespace PMCommonEntities.Models.PseudoXchange
 {
-    public class XchangeSharedNamespace
+    public static class XchangeSharedNamespace
     {
-        public string Namespace = "nsShared";
+        public const string Namespace = "nsShared";
 
-        public class SetOpenOrders
+        public static class SetOpenOrders
         {
-            public string Set = "setOpenOrders";
-            public string SymbolBin = "bSymbol";
-            public string OrderDataBin = "bOrder";
-            public string TimestampBin = "bDate";
+            public const string Set = "setOpenOrders";
+            public const string SymbolBin = "bSymbol";
+            public const string OrderDataBin = "bOrder";
+            public const string TimestampBin = "bDate";
         }
 
-        public class SetClosedOrders
+        public static class SetClosedOrders
         {
-            public string Set = "setClosedOrders";
-            public string SymbolBin = "bSymbol";
-            public string OrderDataBin = "bOrder";
-            public string TimestampBin = "bDate";
+            public const string Set = "setClosedOrders";
+            public const string SymbolBin = "bSymbol";
+            public const string OrderDataBin = "bOrder";
+            public const string TimestampBin = "bDate";
         }
 
-        public class SetOrderBook
+        public static class SetOrderBook
         {
-            public string Set = "setOrderBook";
-            public string SymbolBin = "bSymbol";
-            public string LastSoldPriceBin = "bPrice";
-            public string LastTradeTimeBin = "bTime";
-            public string BuyVolumeBin = "bBVol";
-            public string SellVolumeBin = "bSVol";
+            public const string Set = "setOrderBook";
+            public const string SymbolBin = "bSymbol";
+            public const string LastSoldPriceBin = "bPrice";
+            public const string BidPriceBin = "bBid";
+            public const string AskPriceBin = "bAsk";
+            public const string LastTradeTimeBin = "bTime";
+            public const string BuyVolumeBin = "bBVol";
+            public const string SellVolumeBin = "bSVol";
         }
 
-        public class SetEquities
+        public static class SetEquities
         {
-            public string Set = "setEquities";
-            public string SymbolBin = "bSymbol";
-            public string InitialPriceBin = "bInit";
-            public string DescriptionBin = "bDesc";
-            public string ListingStatusBin = "bStatus";
-            public string ListingDateBin = "bLstDt";
+            public const string Set = "setEquities";
+            public const string SymbolBin = "bSymbol";
+            public const string InitialPriceBin = "bInit";
+            public const string DescriptionBin = "bDesc";
+            public const string ListingStatusBin = "bStatus";
+            public const string ListingDateBin = "bLstDt";
         }
     }
 
-    public class XchangeInMemNamespace
+    public static class XchangeInMemNamespace
     {
-        public string Namespace = "nsInMem";
+        public const string Namespace = "nsInMem";
+
+        public static class SetLatestPriceCache
+        {
+            public const string Set = "setPriceCache";
+            public const string CachedPriceBin = "bPrice";
+        }
+
+        public static class SetAggregatePriceCache
+        {
+            public const string Set = "setAggrPriceCache";
+            public const string CachedPriceBin = "bPrice";
+        }
+
+        public static class SetIndicesCache
+        {
+            public const string Set = "setIdicesCache";
+            public const string DowPointsBin = "bDow";
+            public const string Sp500PointsBin = "bSp";
+            public const string NasdaqPointsBin = "bNsdq";
+        }
     }
 }
