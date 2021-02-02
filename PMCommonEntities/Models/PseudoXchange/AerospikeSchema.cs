@@ -70,5 +70,11 @@ namespace PMCommonEntities.Models.PseudoXchange
             public const string Sp500PointsBin = "bSp";
             public const string NasdaqPointsBin = "bNsdq";
         }
+
+        public static class SetDetailedQuoteCache
+        {
+            public const string Set = "setDetailedQouteCache";
+            public const string CachedQuoteBin = "bQoute";
+        }
     }
 }
