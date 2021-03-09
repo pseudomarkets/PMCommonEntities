@@ -13,5 +13,6 @@ namespace PMCommonEntities.Models
         public string OrderType { get; set; }
         public int Quantity { get; set; }
         public bool IsOpenOrder { get; set; }
+        public RDSEnums.EnvironmentId EnvironmentId { get; set; }
     }
 }

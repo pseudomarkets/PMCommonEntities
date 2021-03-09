@@ -11,5 +11,6 @@ namespace PMCommonEntities.Models
         public string Ticker { get; set; }
         public int Quantity { get; set; }
         public double PurchasePrice { get; set; }
+        public RDSEnums.EnvironmentId EnvironmentId { get; set; }
     }
 }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Permissions;
 using System.Threading.Tasks;
+using PMCommonEntities;
+using PMCommonEntities.Models;
 
 /*
  * Pseudo Markets Unified Web API
@@ -21,5 +23,8 @@ namespace PMUnifiedAPI.Models
         public double Value { get; set; }
         public string Symbol { get; set; }
         public int Quantity { get; set; }
+        public RDSEnums.OriginId OriginId { get; set; }
+        public RDSEnums.SecurityType SecurityTypeId { get; set; }
+        public RDSEnums.EnvironmentId EnvironmentId { get; set; }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PMCommonEntities.Models;
 
 /*
  * Pseudo Markets Unified Web API
@@ -17,5 +18,6 @@ namespace PMUnifiedAPI.Models
         public int Id { get; set; }
         public string ProviderName { get; set; }
         public string ApiKey { get; set; }
+        public RDSEnums.EnvironmentId EnvironmentId { get; set; }
     }
 }

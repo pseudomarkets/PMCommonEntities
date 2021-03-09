@@ -27,7 +27,6 @@ namespace PMCommonEntities.Models.PseudoXchange
         public static class SetOrderBook
         {
             public const string Set = "setOrderBook";
-            public const string SymbolBin = "bSymbol";
             public const string LastSoldPriceBin = "bPrice";
             public const string BidPriceBin = "bBid";
             public const string AskPriceBin = "bAsk";
@@ -39,7 +38,6 @@ namespace PMCommonEntities.Models.PseudoXchange
         public static class SetEquities
         {
             public const string Set = "setEquities";
-            public const string SymbolBin = "bSymbol";
             public const string InitialPriceBin = "bInit";
             public const string DescriptionBin = "bDesc";
             public const string ListingStatusBin = "bStatus";
@@ -65,7 +63,7 @@ namespace PMCommonEntities.Models.PseudoXchange
 
         public static class SetIndicesCache
         {
-            public const string Set = "setIdicesCache";
+            public const string Set = "setIndicesCache";
             public const string DowPointsBin = "bDow";
             public const string Sp500PointsBin = "bSp";
             public const string NasdaqPointsBin = "bNsdq";

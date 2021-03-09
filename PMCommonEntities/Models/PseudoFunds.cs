@@ -12,5 +12,7 @@ namespace PMCommonEntities.Models
         public string FundDescription { get; set; }
         public double InitialInvestment { get; set; }
         public int SharesOutstanding { get; set; }
+        public RDSEnums.EnvironmentId EnvironmentId { get; set; }
+
     }
 }

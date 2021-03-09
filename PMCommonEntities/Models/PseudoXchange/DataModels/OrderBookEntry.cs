@@ -13,5 +13,7 @@ namespace PMCommonEntities.Models.PseudoXchange.DataModels
         public DateTime LastTradeTime { get; set; }
         public long BuyVolume { get; set; }
         public long SellVolume { get; set; }
+        public double Bid { get; set; }
+        public double Ask { get; set; }
     }
 }

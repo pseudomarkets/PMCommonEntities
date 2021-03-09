@@ -10,5 +10,6 @@ namespace PMCommonEntities.Models
         public int FundId { get; set; }
         public double CurrentNav { get; set; }
         public DateTime ClosingDate { get; set; }
+        public RDSEnums.EnvironmentId EnvironmentId { get; set; }
     }
 }

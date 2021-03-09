@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PMCommonEntities.Models;
+using PMCommonEntities.Models.PseudoXchange.OrderEntryModels;
 
 /*
  * Pseudo Markets Unified Web API
@@ -17,5 +19,6 @@ namespace PMUnifiedAPI.Models
         public int Id { get; set; }
         public int UserID { get; set; }
         public double Balance { get; set; }
+        public RDSEnums.EnvironmentId EnvironmentId { get; set; }
     }
 }

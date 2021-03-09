@@ -9,5 +9,6 @@ namespace PMCommonEntities.Models
         public int Id { get; set; }
         public DateTime HolidayDate { get; set; }
         public string Description { get; set; }
+        public RDSEnums.EnvironmentId EnvironmentId { get; set; }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PMCommonEntities.Models;
 
 /*
  * Pseudo Markets Unified Web API
@@ -18,5 +19,6 @@ namespace PMUnifiedAPI.Models
         public string Username { get; set; }
         public string Password { get; set; }
         public byte[] Salt { get; set; }
+        public RDSEnums.EnvironmentId EnvironmentId { get; set; }
     }
 }
