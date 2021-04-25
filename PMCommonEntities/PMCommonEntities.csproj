@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>PMCommonEntities</PackageId>
-    <Version>1.1.8</Version>
+    <Version>1.2.0</Version>
     <Authors>Shravan Jambukesan</Authors>
     <Company>Pseudo Markets</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -12,7 +12,7 @@
     <PackageProjectUrl>https://github.com/pseudomarkets/PMCommonEntities</PackageProjectUrl>
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <PackageReleaseNotes>* New data models for PseudoXchange and other APIs</PackageReleaseNotes>
+    <PackageReleaseNotes>* New data models for Consolidated Trading Platform</PackageReleaseNotes>
     <PackageTags>pseudo markets</PackageTags>
   </PropertyGroup>
 
